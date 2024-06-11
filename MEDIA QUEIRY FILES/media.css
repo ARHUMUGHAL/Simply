@@ -1,0 +1,429 @@
+@media (max-width : 1600px) {
+    #herobox h1 {
+        width: 46%;
+        font-size: 3.7vw;
+    }
+
+    .content-part h1 {
+        font-size: 1.7vw;
+    }
+
+    .border-line {
+        width: 6vw;
+    }
+
+    .content-part p {
+        font-size: 1vw;
+    }
+
+    .heading-side {
+        width: 40%;
+    }
+}
+
+@media (max-width : 1280px) {
+    /* <================================================== herobox Styling Here ==================================================> */
+
+    #herobox {
+        height: 40vw;
+    }
+
+    /* <================================================== section-1 Styling Here ==================================================> */
+
+    #section-1 {
+        height: 28vw;
+    }
+
+    .image-section {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .coloum-1 p {
+        font-size: 1.3vw;
+    }
+
+    .coloum-1 h1 {
+        font-size: 1.7vw;
+    }
+
+    .coloum-2 p {
+        font-size: 1.3vw;
+    }
+
+    .coloum-2 h1 {
+        font-size: 1.7vw;
+    }
+
+    .coloum-3 p {
+        font-size: 1.3vw;
+    }
+
+    .coloum-3 h1 {
+        font-size: 1.7vw;
+    }
+
+    /* <================================================== secondary-content Styling Here =============================================> */
+
+    #secondary-content {
+        height: 40vw;
+    }
+
+    .content-part p {
+        line-height: 1.8vw;
+    }
+
+    .content-part a {
+        width: 12vw;
+        height: 4vw;
+        font-size: 1.2vw;
+    }
+
+    /* <================================================== heard-section Styling Here =============================================> */
+
+    #heard-section a {
+        width: 15vw;
+        height: 5vw;
+        font-size: 1.5vw;
+    }
+
+    /* <================================================== footer Styling Here ==================================================> */
+
+    .heading-side p {
+        font-size: 1.2vw;
+    }
+
+    .heading-side a.one {
+        font-size: 1.2vw;
+    }
+
+    .heading-side a.two {
+        font-size: 1.2vw;
+        left: 11vw;
+    }
+}
+
+@media (max-width : 1080px) {
+    /* <================================================== section-1 Styling Here ==================================================> */
+
+    .container {
+        top: 60%;
+    }
+
+    /* <================================================== secondary-content Styling Here ==========================================> */
+
+    .content-part h1 {
+        top: 10%;
+        font-size: 2.2vw;
+    }
+
+    .content-part a {
+        padding-top: 1vw;
+    }
+
+    .border-line {
+        top: 35%;
+    }
+
+    /* <================================================== heard-section Styling Here ==================================================> */
+
+    #heard-section p {
+        font-size: 15px;
+        top: 40%;
+    }
+
+    #heard-section a {
+        padding-top: 1.3vw;
+    }
+
+    /* <================================================== footer Styling Here ==================================================> */
+
+    #footer {
+        height: 30vw;
+    }
+
+    .company-section-1 {
+        font-size: 1.4vw;
+    }
+
+    .company-section-1 h1 {
+        font-size: 1.5vw;
+    }
+
+    .company-section-2 {
+        font-size: 1.4vw;
+    }
+
+    .company-section-2 h1 {
+        font-size: 1.5vw;
+    }
+
+    .company-section-3 {
+        font-size: 1.4vw;
+    }
+
+    .company-section-3 h1 {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media (max-width : 920px) {
+
+    /* <================================================== Herobox Styling Here ==================================================> */
+    #herobox{
+        height: 60vw;
+    }
+    #herobox h1 {
+        font-size: 4vw;
+        width: 50%;
+    }
+
+    #herobox a {
+        width: 16vw;
+        font-size: 1.5vw;
+        height: 5vw;
+        padding-top: 1.5vw;
+    }
+
+    /* <================================================== section-1 Styling Here ==================================================> */
+
+    #section-1{
+        height: 80vh;
+    }
+    .container{
+        height: 90%;
+        flex-direction: column;
+        top: 48%;
+    }
+    .image-section{
+        width: 50px;
+        height: 50px;
+    }
+    .coloum-1{
+        width: 70%;
+    }
+    .coloum-1 h1{
+        font-size: 16px;
+    }
+    .coloum-1 p{
+        font-size: 15px;
+    }
+    
+    .coloum-2{
+        width: 70%;
+    }
+    .coloum-2 h1{
+        font-size: 16px;
+    }
+    .coloum-2 p{
+        font-size: 15px;
+    }
+    .coloum-3{
+        width: 70%;
+    }
+    .coloum-3 h1{
+        font-size: 16px;
+    }
+    .coloum-3 p{
+        font-size: 15px;
+    }
+
+    /* <================================================== featured-section Styling Here ==========================================> */
+
+    #featured-section {
+        height: 75vw;
+    }
+
+    #featured-section h1 {
+        font-size: 3vw;
+    }
+
+    #featured-section p {
+        font-size: 1.5vw;
+    }
+
+    /* <================================================== secondary-content Styling Here ==========================================> */
+
+    #secondary-content{
+        height: 80vh;
+        position: relative;
+    }
+
+    .blog-1{
+        width: 80%;
+        position: absolute;
+        height: 40%;
+        top: 5%;
+    }
+    .blog-2{
+        width: 80%;
+        position: absolute;
+        height: 40%;
+        bottom: 8%;
+    }
+    .content-part h1{
+        font-size: 25px;
+    }
+    .border-line{
+        width: 60%;
+        top: 25%;
+    }
+    .content-part p {
+        font-size: 13px;
+        top: 38%;
+        line-height: 20px;
+    }
+
+    .content-part a {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        padding-top: 10px;
+        letter-spacing: 0px;
+        top: 75%;
+    }
+
+    /* <================================================== footer Styling Here ==================================================> */
+
+    .heading-side p {
+        width: 150%;
+    }
+
+    .heading-side a.one::before {
+        height: 1.6vw;
+    }
+
+}
+
+@media (max-width : 768px) {
+
+    /* <================================================== Navbar Styling Started Here ===============================================> */
+
+    nav ul {
+        display: none;
+    }
+
+    nav #toggle-icon img {
+        display: block;
+    }
+
+    /* <================================================== Herobox Styling Here ==================================================> */
+
+    #herobox {
+        height: 60vh;
+    }
+
+    #herobox h1 {
+        font-size: 6vw;
+        width: 75%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #herobox a {
+        top: 72%;
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    /* <================================================== section-1 Styling Here ==================================================> */
+
+    .coloum-1 p{
+        font-size: 2.1vw;
+    }
+    .coloum-2 p{
+        font-size: 2.1vw;
+    }
+    .coloum-3 p{
+        font-size: 2.1vw;
+    }
+
+    /* <================================================== featured-section Styling Here ==================================================> */
+
+    #featured-section h1{
+        padding-bottom: 10px;
+        font-size: 20px;
+        top: 0%;
+    }
+
+    #featured-section p{
+        font-size: 1.7vw;
+        line-height: 20px;
+        top: 12%;
+    }
+
+
+
+    /* <================================================== secondary-content Styling Here ==================================================> */
+
+
+    .content-part p {
+        letter-spacing: 0px;
+        line-height: 20px;
+        top: 32%;
+    }
+    .content-part h1{
+        font-size: 3.2vw;
+    }
+
+    .content-part a {
+        letter-spacing: 0px;
+        padding-top: 1.2vw;
+        top: 80%;
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    /* <================================================== heard-section Styling Here ==================================================> */
+    #heard-section{
+        height: 50vh;
+    }
+    #heard-section p{
+        font-size: 2.2vw;
+    }
+
+    #heard-section a{
+        top: 80%;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+        padding-top: 12px;
+    }
+
+    /* <================================================== footer Styling Here ==================================================> */
+    #footer{
+        height: 8vw;
+    }
+    .company-section-1{
+        display: none;
+    }
+    .company-section-2{
+        display: none;
+    }
+    .company-section-3{
+        display: none;
+    }
+    .heading-side{
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 70%;
+    }
+    .heading-side p{
+        font-size: 12px;
+        letter-spacing: 0px;
+        position: relative;
+        top: -25%;
+        left: 22%;
+    }
+    .heading-side a.two{
+        display: none;
+    }
+
+    .heading-side a.one{
+        display: none;
+    }
+}

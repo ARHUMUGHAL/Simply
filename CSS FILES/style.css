@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* <================================================== Navbar Styling Started Here ===============================================> */
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: fixed;
+    top: -100px;
+    z-index: 51;
+}
+#toggle-icon img{
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+.toggle-container{
+    width: 35%;
+    height: 100%;
+    background-color: #151515;
+    position: fixed;
+    z-index: 5;
+    top: 0%;
+    right: -50%;
+    overflow: hidden;
+    transition: .5s ease;
+}
+.toggle-container ul{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    text-align: right;
+    list-style: none;
+}
+.toggle-container ul li{
+    margin: 50px 0px;
+}
+.toggle-container ul li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    background-color: #0e776e;
+    width: 300%;
+    position: relative;
+    right: 170%;
+    padding: 16px 30px;
+    height: 50px;
+    
+}
+nav h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: rgb(30, 30, 30); 
+    position: absolute;
+    top: 16%;
+}
+
+nav h1 span{
+    color: green;
+    font-size: 50px;
+    position: relative;
+    right: 10%;
+    animation: colorchange 2s ease alternate infinite;
+}
+@keyframes colorchange {
+    from{
+        color: green;
+    }
+    to{color: #73ebe1;}
+}
+nav ul{
+    list-style: none;
+    position: absolute;
+    right: 4%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: .5s ease;
+    color: rgb(33, 33, 33);
+}
+nav ul li a:hover{
+    color: #0e776e;
+}
+nav ul li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #73ebe1;
+    position: absolute;
+    top: 110%;
+    transition: .5s ease;
+}
+
+nav ul li:nth-child(1):hover a::before{
+    width: 11.5%;
+}
+nav ul li:nth-child(2):hover a::before{
+    width: 21%;
+}
+nav ul li:nth-child(3):hover a::before{
+    width: 18%;
+}
+nav ul li:nth-child(4):hover a::before{
+    width: 10%;
+}
+/* <================================================== Herobox Styling Here ==================================================> */
+
+#herobox{
+    width: 100%;
+    height: 85vh;
+    background-image: url('/Images/herobox-image.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.white-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+}
+#herobox::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.04525560224089631) 0%, rgba(0,48,87,0.5270483193277311) 100%);
+    position: absolute;
+    opacity: 0%;
+}
+#herobox h1{
+    position: absolute;
+    z-index: 2;
+    font-size: 60px;
+    width: 45%;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+    transform: scale(0);
+}
+#herobox h1 span{
+    font-weight: 300;
+    color: white;
+}
+#herobox a{
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+    border: 2px solid rgb(34, 34, 34);
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 50;
+    transition: .3s linear;
+    opacity: 0%;
+}
+
+#herobox a:hover{
+    background-color: rgba(255, 255, 255, 0.418);
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.282);
+}
+
+
+/* <================================================== section-1 Styling Here ==================================================> */
+
+#section-1{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    position: relative;
+}
+.container{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.coloum-1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-section{
+    width: 90px;
+    height: 90px;
+    border: 2px solid rgb(42, 42, 42);
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.image-section:hover{
+    background-color: #48f0e2;
+    border: 2px solid white;
+}
+.image-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.coloum-1 h1{
+    color:rgb(42, 42, 42) ;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.coloum-1 p{
+    text-align: center;
+    position: relative;
+    top: 10px;
+
+}
+.coloum-2{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.coloum-2 h1{
+    color:rgb(42, 42, 42) ;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.coloum-2 p{
+    text-align: center;
+    position: relative;
+    top: 10px;
+
+}
+.coloum-3{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.coloum-3 h1{
+    color:rgb(42, 42, 42) ;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.coloum-3 p{
+    text-align: center;
+    position: relative;
+    top: 10px;
+
+}
+
+/* <================================================== featured-section Styling Here ==================================================> */
+
+#featured-section{
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#featured-section h1{
+    position: absolute;
+    top: 10%;
+    color:rgb(42, 42, 42);
+    border-bottom: 2px solid #73ebe1;
+    padding-bottom: 20px;
+}
+#featured-section p{
+    text-align: center;
+    position: absolute;
+    top: 23%;
+    width: 75%;
+    color:grey;
+}
+.video-box{
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    bottom: 3%;
+    overflow: hidden;
+}
+.video-box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* <================================================== secondary-content Styling Here ==================================================> */
+
+#secondary-content{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.blog-1{
+    width: 35%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+}
+.content-part{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(214, 214, 214, 0.33);
+    padding: 50px 0px;
+    border: 1px solid white;
+}
+.content-part h1{
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+    color: rgb(42, 42, 42);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.border-line{
+    width: 40%;
+    height: 2px;
+    background-color: #73ebe1;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content-part p{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 25px;
+}
+.content-part a{
+    width: 160px;
+    height: 50px;
+    border: 2px solid #73ebe1;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(62, 62, 62);
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    transition: .5s ease;
+}
+.content-part a:hover{
+    background-color: #73ebe1;
+    color: white;
+}
+.image-part{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(34, 53, 53);
+    overflow: hidden;
+}
+.image-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.image-part:hover img{
+    transform: scale(1.2);
+}
+.blog-2{
+    width: 35%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+}
+
+/* <================================================== heard-section Styling Here ==================================================> */
+
+#heard-section{
+    width: 100%;
+    height: 55vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#heard-section h1{
+    color: rgb(39, 39, 39);
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #73ebe1;
+    height: 70px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 15%;
+}
+#heard-section p{
+    text-align: center;
+    width: 81%;
+    position: absolute;
+    top: 45%;
+    line-height: 25px;
+}
+#heard-section a{
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    text-decoration: none;
+    padding-top: 18px;
+    color: #73ebe1;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: 2px solid #73ebe1;
+    text-align: center;
+    transition: .5s ease;
+}
+#heard-section a:hover{
+    background-color: #73ebe1;
+    color: white;
+}
+
+/* <================================================== footer Styling Here ==================================================> */
+
+#footer{
+    width: 100%;
+    height: 50vh;
+    background-image: url('/Images/herobox-image.jpg');
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+#footer::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,0.22452731092436973) 100%);
+}
+.heading-side{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+.heading-side p{
+    color: white;
+    letter-spacing: 2px;
+}
+.heading-side a.one{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top: 20%;
+}
+.heading-side a.one::before{
+    content: "";
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    left: 104%;
+}
+.heading-side a.two{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top: 20%;
+    left: 23%;
+}
+.company-section-1{
+    width: 12%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    right: 28%;
+}
+.company-section-1 h1{
+    font-size: 20px;
+    color: white;
+}
+.company-section-1 p{
+    margin: 25px 0px;
+    color: white;
+    font-weight: 500;
+}
+.company-section-2{
+    width: 12%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+.company-section-2 h1{
+    font-size: 20px;
+    color: white;
+}
+.company-section-2 p{
+    margin: 25px 0px;
+    color: white;
+    font-weight: 500;
+}
+.company-section-3{
+    width: 12%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+.company-section-3 h1{
+    font-size: 20px;
+    color: white;
+}
+.company-section-3 p{
+    margin: 25px 0px;
+    color: white;
+    font-weight: 500;
+}
